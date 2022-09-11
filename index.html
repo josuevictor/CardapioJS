@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="container">
+      <div>
+        <a href="#">
+          <img src="./assets/cardapio.png" alt="menu-icon" />
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img
+            src="./assets/bolsa-de-compras.png"
+            alt="bag-icon"
+            onclick="bagActions.showModal()"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section class="menu-table">
+        <table>
+          <tbody>
+
+            <tr>
+              <td>
+                <div class="description-burguer">
+                  <p>Hambúrguer comum</p>
+                  <small>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </small>
+                  <b>R$ 15,99</b>
+                </div>
+
+                <img src="./assets/hamburguer1.png" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                  <p>Hambúrguer Monstro</p>
+                  <small>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </small>
+                  <b>R$ 29,99</b>
+                </div>
+                <img src="./assets/hamburguer2.png" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                  <p>Hambúrguer Gourmet</p>
+                  <small>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </small>
+                  <b>R$ 19,99</b>
+                </div>
+                <img src="./assets/hamburguer3.png" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                  <p>Hambúrguer Triplo</p>
+                  <small>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </small>
+                  <b>R$ 25,99</b>
+                </div>
+                <img src="./assets/hamburguer4.png" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div>
+                  <p>Hambúrguer de Frango</p>
+                  <small>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </small>
+                  <b>R$ 9,99</b>
+                </div>
+                <img src="./assets/hamburguer5.png" alt="" />
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal-confirm-item">
+        <a href="#" onclick="bagActions.closeModal()">Fechar</a>
+      </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
